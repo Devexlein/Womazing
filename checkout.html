@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">	
+	<title>Womazing / checkout page</title>	
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- OG Tags -->
+	<meta property="og:title" content="Womazing / checkout page">
+	<meta property="og:description" content="Самая успешная итальянская prêt-a-porter компания."> 
+	<meta property="og:image" content="https://womazing.ru/img/preview.png">
+	<meta property="og:site_name" content="Womazing">	
+	<!-- Styling -->
+	<meta name="theme-color" content="#F1EADC">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<!-- Fonts -->	
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">	
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="menu" id="menu">
+			<div class="container">				
+				<div class="row">					
+					<div class="col-12 d-flex align-items-center justify-content-between">
+						<nav class="menu-mobile d-flex d-lg-none">
+						    <input class="menu-mobile__checkbox" type="checkbox" id="checkbox">
+						    <label for="checkbox" class="menu-mobile__btn">
+						    	<div class="menu-mobile__icon"></div>
+						    </label>
+						    <div class="menu-mobile__container">
+							    <ul class="menu-mobile__list">
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="index.html">Главная</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="shop.html">Магазин</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="about.html">О бренде</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="contact.html">Контакты</a>
+							        </li>
+							    </ul>
+							</div>
+						</nav>
+						<a class="logo d-flex">
+							<img class="logo__image" src="img/logo-image.svg" alt="Womazing">
+							womazing
+						</a>
+						<nav class="nav d-lg-flex align-items-center d-none">					
+							<ul class="nav__list d-flex">
+								<li class="nav__link">
+									<a href="index.html">Главная</a>
+								</li>
+								<li class="nav__link">
+									<a href="shop.html">Магазин</a>
+								</li>
+								<li class="nav__link">
+									<a href="about.html">О бренде</a>
+								</li>
+								<li class="nav__link">
+									<a href="contact.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-right d-flex justify-content-end">
+							<div class="menu-right__list d-lg-flex d-none">
+								<a class="menu-right__phone modal-btn" href="#">						
+									+7 (495) 823-54-12									
+								</a>
+							</div>
+							<div class="menu-right__cart">
+								<a href="cart.html">
+									<img src="img/shopping-cart.svg" alt="cart">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>												
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="checkout-header" id="checkout-header">
+			<div class="container">			
+				<div class="row">
+					<div class="col">
+						<h1 class="checkout-header__title page-title">Оформление заказа</h1>
+						<div class="bread-crumbs">
+							<a class="bread-crumbs__btn" href="index.html">Главная</a>
+							<span class="bread-crumbs__dash">—</span>
+							<a class="bread-crumbs__btn bread-crumbs__btn_now" href="shop.html">Оформление заказа</a>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</section>			
+		<section class="checkout" id="checkout">
+			<div class="container">
+				<div class="row">
+					<form action="mail.php" class="checkout-form js-form" id="checkout-form" novalidate="novalidate">
+						<div class="col d-md-flex">
+							<div class="col col-lg-5">
+								<div class="form-group">
+				            		<h3 class="checkout-form__title">Данные покупателя</h3>
+					                <input type="text" class="checkout-form__input" name="name" placeholder="Имя" required>
+					                <input type="e-mail" class="checkout-form__input" name="email" placeholder="E-mail">
+					                <input type="tel" class="checkout-form__input" name="tel" placeholder="Телефон">
+				                </div>
+				                <div class="form-group">
+				            		<h3 class="checkout-form__title">Адрес получателя</h3>
+					                <input type="text" class="checkout-form__input" name="country" id="country" placeholder="Страна" required>
+					                <input type="e-mail" class="checkout-form__input" name="city" id="city" placeholder="Город">
+					                <input type="text" class="checkout-form__input" name="street" id="street" placeholder="Улица">
+					                <input type="text" class="checkout-form__input" name="house" id="house" placeholder="Дом">
+					                <input type="text" class="checkout-form__input" name="apartment" id="apartment" placeholder="Квартира">
+				                </div>
+				                <div class="form-group">
+				            		<h3 class="checkout-form__title">Комментарии</h3>
+					                <textarea class="checkout-form__input comment__input" name="message" id="message" cols="20" rows="5" placeholder="Страна"></textarea>
+				                </div>
+				            </div>
+				            <div class="col-lg-7 d-flex flex-column offset-md-1 align-items-center">
+				            	<div class="form-group">
+				            		<h3 class="checkout-form__title">Ваш заказ</h3>
+				            		<div class="checkout-form__table">
+				            			<table class="checkout-table">
+					            			<thead>
+					            				<tr>
+					            					<th class="checkout-table__col1" scope="col">
+														<h4>Товар</h4>
+													</th>												
+													<th class="checkout-table__col2" scope="col">
+														<h4>Всего</h4>
+													</th>
+					            				</tr>
+					            			</thead>
+					            			<tbody>
+					            				<tr>
+					            					<td>
+					            						<p class="checkout-table__product-title">Футболка USA</p>
+					            					</td>
+													<td>
+														<p class="checkout-table__product-price">$129</p>
+													</td>
+					            				</tr>
+					            				<tr>
+					            					<td>
+					            						<p>Подытог</p>	
+					            					</td>
+					            					<td>
+					            						<p class="checkout-table__subtotal-price">$129</p>
+					            					</td>
+					            				</tr>
+					            				<tr >
+					            					<div class="checkout-table__total-price">
+					            					<td>
+					            						<h4>Итого</h4>
+					            					</td>
+					            					<td>
+					            						<h4>$129</h4>
+					            					</td>
+					            					</div>
+					            				</tr>
+					            			</tbody>
+				            			</table>				            			
+				            		</div>
+				                </div>
+				                <div class="form-group">
+				            		<h3 class="checkout-form__title">Способы оплаты</h3>
+				            		<div>
+				            			<input class="checkout-form__radio" type="radio" name="cash-payment" value="cash" checked>
+				            			<span class="checkout-form__custom"></span>  
+				            			<label for="checkout-form__radio">Оплата наличными</label>     			
+				            		</div>
+				            		<a type="submit" class="checkout__btn btn" data-submit>Разместить заказ</a>
+				                </div>
+				            </div>
+				        </div>
+			        </form>												            
+				</div>				
+			</div>		
+		</section>	
+	</main>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-12 flex-column flex-sm-row d-sm-flex align-items-center justify-content-sm-between">
+					<div class="footer__logo">
+						<a class="logo footer-logo d-flex justify-content-center justify-content-md-start">
+							<img class="logo__image" src="img/logo-image.svg" alt="Womazing">
+							womazing
+						</a>
+						<div class="legal footer-content">
+							<a class="legal__link" href="#">© Все права защищены</a>
+							<a class="legal__link" href="#">Политика конфиденциальности</a>
+							<a class="legal__link" href="#">Публичная оферта</a>					
+						</div>
+					</div>				
+					<ul class="footer-menu nav nav__list d-lg-flex d-none">
+						<li class="nav__link">
+							<a href="index.html">Главная</a>
+						</li>
+						<div class="offer__wrap">
+							<li class="nav__link">
+								<a href="shop.html">Магазин</a>									
+							</li>
+							<ul class="footer-submenu footer-content">
+								<li class="footer-submenu__link">
+									<a href="#">Пальто</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Свитшоты</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Кардиганы</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Толстовки</a>
+								</li>
+							</ul>
+						</div>
+						<li class=" nav__link">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class=" nav__link">
+							<a href="contact.html">Контакты</a>
+						</li>									
+					</ul>
+					<div class="footer-menu nav nav-right">
+						<a class="footer-menu__link modal-btn" href="#">
+							+7 (495) 823-54-12									
+						</a>						
+						<a class="footer-menu__link" href="mailto:hello@womazing.com">		
+							hello@womazing.com
+						</a>
+						<div class="socials d-flex justify-content-center justify-content-md-end">
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/instagram.svg" alt="Instagram">				
+							</a>
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/facebook.svg" alt="Facebook">	
+							</a>
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/twitter.svg" alt="Twitter">	
+							</a>
+						</div>
+						<img class="footer-menu__payments" src="img/visa-mastercard.svg" alt="visa-mastercard">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal-window -->
+	<div class="modal-wrapper" id="modal-wrapper">
+	    <div class="modal-overlay"></div>
+	    <div class="modal-window">
+	    	<div class="row">
+	    		<div class="col-12 d-flex flex-column">
+		    		<div class="modal-window__content">
+			        	<div class="modal-window__close d-flex justify-content-end">
+			        		<button class="btn-close"></button>
+			        	</div>
+		            <div class="modal-window__view">
+		            	<h3 class="modal-window__title">Заказать обратный звонок</h3>
+		            	<form action="mail.php" class="modal-content__form js-form" id="modal-window-form" novalidate="novalidate">
+			                <input type="text" class="modal-content__input" name="name" placeholder="Имя" required>
+			                <input type="e-mail" class="modal-content__input" name="email" placeholder="E-mail">
+			                <input type="tel" class="modal-content__input" name="tel" placeholder="Телефон">
+			                <button type="submit" class="modal-content__call btn-call btn" data-submit>Заказать звонок</button>
+		            	</form>
+		            </div>                            
+		        </div>         
+	    	</div>
+	    </div>    
+	</div>
+	<!-- Message for user after submitting the form -->
+	<div class="modal-message" id="modal-message">
+	    <div class="modal-message__overlay"></div>
+	    <div class="modal-message__window">
+	    	<div class="row">
+	    		<div class="col-12 d-flex flex-column text-center">
+	    			<div class="modal-message__view" id="modal-message__view">
+					    <h3 class="modal-message__title modal-window__title" id="thx">
+					        Отлично! Мы скоро вам перезвоним.
+					    </h3>
+					    <button class="btn-close btn-ghost">Закрыть</button>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<!-- <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script> -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="js/jquery-3.6.0.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->	
+  <!--   <script src="./assets/js/parallax.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script> -->
+    <script src="js/jquery.validate.min.js"></script>	
+	<script src="js/main.js"></script>
+</body>
+
+
+
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">	
+	<title>Womazing / contact page</title>	
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- OG Tags -->
+	<meta property="og:title" content="Womazing / contact page">
+	<meta property="og:description" content="Самая успешная итальянская prêt-a-porter компания."> 
+	<meta property="og:image" content="https://womazing.ru/img/preview.png">
+	<meta property="og:site_name" content="Womazing">	
+	<!-- Styling -->
+	<meta name="theme-color" content="#F1EADC">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<!-- Fonts -->	
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=e81e5104-251c-4b79-be5e-921edf1f9646&lang=ru_RU" type="text/javascript"> 
+	</script> 	
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="menu" id="menu">
+			<div class="container">				
+				<div class="row">					
+					<div class="col-12 d-flex align-items-center justify-content-between">
+						<nav class="menu-mobile d-flex d-lg-none">
+						    <input class="menu-mobile__checkbox" type="checkbox" id="checkbox">
+						    <label for="checkbox" class="menu-mobile__btn">
+						    	<div class="menu-mobile__icon"></div>
+						    </label>
+						    <div class="menu-mobile__container">
+							    <ul class="menu-mobile__list">
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="index.html">Главная</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="shop.html">Магазин</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="about.html">О бренде</a>
+							        </li>
+							        <li class="menu-mobile__item">
+							        	<a class="menu-mobile__link" href="contact.html">Контакты</a>
+							        </li>
+							    </ul>
+							</div>
+						</nav>
+						<a class="logo d-flex">
+							<img class="logo__image" src="img/logo-image.svg" alt="Womazing">
+							womazing
+						</a>
+						<nav class="nav d-lg-flex align-items-center d-none">					
+							<ul class="nav__list d-flex">
+								<li class="nav__link">
+									<a href="index.html">Главная</a>
+								</li>
+								<li class="nav__link">
+									<a href="shop.html">Магазин</a>
+								</li>
+								<li class="nav__link">
+									<a href="about.html">О бренде</a>
+								</li>
+								<li class="nav__link nav__link_active">
+									<a href="contact.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-right d-flex justify-content-end">
+							<div class="menu-right__list d-lg-flex d-none">
+								<a class="menu-right__phone modal-btn" href="#">						
+									+7 (495) 823-54-12									
+								</a>
+							</div>
+							<div class="menu-right__list">
+								<a class="menu-right__cart" href="cart.html">
+									<img src="img/shopping-cart.svg" alt="cart">
+									<span class="menu-right__cart_counter">1</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>												
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="contact-header" id="contact-header">
+			<div class="container">			
+				<div class="row">
+					<div class="col">
+						<h1 class="contact-header__title page-title">Контакты</h1>
+						<div class="bread-crumbs">
+							<a class="bread-crumbs__btn" href="index.html">Главная</a>
+							<span class="bread-crumbs__dash">—</span>
+							<a class="bread-crumbs__btn bread-crumbs__btn_now" href="contact.html">Контакты</a>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="map-block" id="map"></div>				
+			</div>		
+		</section>			
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col d-flex flex-column flex-sm-row flex-sm-wrap">
+						<div class="col col-md-6 col-lg-3">
+							<div class="contact__phone">
+								<p class="contact__subtitle">Телефон</p>
+								<a class="contact__link modal-btn" href="#">				
+									+7 (495) 823-54-12									
+								</a>
+							</div>
+						</div>
+						<div class="col col-md-6 col-lg-4">
+							<div class="contact__e-mail">
+								<p class="contact__subtitle">E-mail</p>
+								<a class="contact__link" href="mailto:info@sitename.com">
+									info@sitename.com
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5">
+							<div class="contact__location">
+								<p class="contact__subtitle">Адрес</p>
+								<h4 class="contact__address">						
+									г. Москва, 3-я улица Строителей, 25									
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</section>		
+		<section class="contact__form" id="contact__form">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<form action="mail.php" class="contact-form form-group js-form" id="contact-form" novalidate="novalidate">
+		            		<h3 class="contact-form__title">Напишите нам</h3>
+			                <input type="text" class="contact-form__input" name="name" placeholder="Имя" required>
+			                <input type="e-mail" class="contact-form__input" name="email" placeholder="E-mail">
+			                <input type="tel" class="contact-form__input" name="tel" placeholder="Телефон">
+			                <textarea class="contact-form__input contact-form__input_wide comment__input" name="message" id="message" cols="20" rows="5" placeholder="Сообщение"></textarea>
+							<a class="contact__btn btn" type="submit" data-submit>Отправить</a>
+							<div class="contact-form__message contact-form__message_successful d-none">
+								<p>Сообщение успешно отправлено</p>
+							</div>
+							<div class="contact-form__message contact-form__message_unsuccessful d-none">
+								<p>Сообщение не удалось отправить</p>
+							</div>
+				        </form>
+					</div>
+				</div>
+			</div>		
+		</section>				
+	</main>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-12 flex-column flex-sm-row d-sm-flex align-items-center justify-content-sm-between">
+					<div class="footer__logo">
+						<a class="logo footer-logo d-flex justify-content-center justify-content-md-start">
+							<img class="logo__image" src="img/logo-image.svg" alt="Womazing">
+							womazing
+						</a>
+						<div class="legal footer-content">
+							<a class="legal__link" href="#">© Все права защищены</a>
+							<a class="legal__link" href="#">Политика конфиденциальности</a>
+							<a class="legal__link" href="#">Публичная оферта</a>					
+						</div>
+					</div>				
+					<ul class="footer-menu nav nav__list d-lg-flex d-none">
+						<li class="nav__link">
+							<a href="index.html">Главная</a>
+						</li>
+						<div class="offer__wrap">
+							<li class="nav__link">
+								<a href="shop.html">Магазин</a>									
+							</li>
+							<ul class="footer-submenu footer-content">
+								<li class="footer-submenu__link">
+									<a href="#">Пальто</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Свитшоты</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Кардиганы</a>
+								</li>
+								<li class="footer-submenu__link">
+									<a href="#">Толстовки</a>
+								</li>
+							</ul>
+						</div>
+						<li class="nav__link">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="nav__link nav__link_active">
+							<a href="contact.html">Контакты</a>
+						</li>									
+					</ul>
+					<div class="footer-menu nav nav-right">
+						<a class="footer-menu__link modal-btn" href="#">
+							+7 (495) 823-54-12									
+						</a>						
+						<a class="footer-menu__link" href="mailto:hello@womazing.com">		
+							hello@womazing.com
+						</a>
+						<div class="socials d-flex justify-content-center justify-content-md-end">
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/instagram.svg" alt="Instagram">				
+							</a>
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/facebook.svg" alt="Facebook">	
+							</a>
+							<a class="footer-menu__link socials__link" href="#">
+								<img src="img/twitter.svg" alt="Twitter">	
+							</a>
+						</div>
+						<img class="footer-menu__payments" src="img/visa-mastercard.svg" alt="visa-mastercard">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal-window -->
+	<div class="modal-wrapper" id="modal-wrapper">
+	    <div class="modal-overlay"></div>
+	    <div class="modal-window">
+	    	<div class="row">
+	    		<div class="col-12 d-flex flex-column">
+		    		<div class="modal-window__content">
+			        	<div class="modal-window__close d-flex justify-content-end">
+			        		<button class="btn-close"></button>
+			        	</div>
+		            <div class="modal-window__view">
+		            	<h3 class="modal-window__title">Заказать обратный звонок</h3>
+		            	<form action="mail.php" class="modal-content__form js-form" id="modal-window-form" novalidate="novalidate">
+			                <input type="text" class="modal-content__input" name="name" placeholder="Имя" required>
+			                <input type="e-mail" class="modal-content__input" name="email" placeholder="E-mail">
+			                <input type="tel" class="modal-content__input" name="tel" placeholder="Телефон">
+			                <button type="submit" class="modal-content__call btn-call btn" data-submit>Заказать звонок</button>
+		            	</form>
+		            </div>                            
+		        </div>         
+	    	</div>
+	    </div>    
+	</div>
+	<!-- Message for user after submitting the form -->
+	<div class="modal-message" id="modal-message">
+	    <div class="modal-message__overlay"></div>
+	    <div class="modal-message__window">
+	    	<div class="row">
+	    		<div class="col-12 d-flex flex-column text-center">
+	    			<div class="modal-message__view" id="modal-message__view">
+					    <h3 class="modal-message__title modal-window__title" id="thx">
+					        Отлично! Мы скоро вам перезвоним.
+					    </h3>
+					    <button class="btn-close btn-ghost">Закрыть</button>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<!-- <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script> -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="js/jquery-3.6.0.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->	
+  <!--   <script src="./assets/js/parallax.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script> -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main-contact.js"></script>	
+	<script src="js/main.js"></script>
+</body>
+
+
+
+

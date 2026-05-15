@@ -1,0 +1,39 @@
+    <!-- Modal-window -->
+<div class="modal-wrapper" id="modal-wrapper">
+    <div class="modal-overlay"></div>
+    <div class="modal-window">
+        <div class="row">
+            <div class="col-12 d-flex flex-column">
+                <div class="modal-window__content">
+                    <div class="modal-window__close d-flex justify-content-end">
+                        <button class="btn-close"></button>
+                    </div>
+                <div class="modal-window__view">
+                    <h3 class="modal-window__title">Заказать обратный звонок</h3>
+                    <form action="mail.php" class="modal-content__form js-form" id="modal-window-form" novalidate="novalidate">
+                        <input type="text" class="modal-content__input" name="name" placeholder="Имя" required>
+                        <input type="e-mail" class="modal-content__input" name="email" placeholder="E-mail">
+                        <input type="tel" class="modal-content__input" name="tel" placeholder="Телефон">
+                        <button type="submit" class="modal-content__call btn-call btn" data-submit>Заказать звонок</button>
+                    </form>
+                </div>                            
+            </div>         
+        </div>
+    </div>    
+</div>
+<!-- Message for user after submitting the form -->
+<div class="modal-message" id="modal-message">
+    <div class="modal-message__overlay"></div>
+    <div class="modal-message__window">
+        <div class="row">
+            <div class="col-12 d-flex flex-column text-center">
+                <div class="modal-message__view" id="modal-message__view">
+                    <h3 class="modal-message__title modal-window__title" id="thx">
+                        Отлично! Мы скоро вам перезвоним.
+                    </h3>
+                    <button class="btn-close btn-ghost">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
